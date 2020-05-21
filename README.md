@@ -1,27 +1,27 @@
-#Rapport
+
 Les modifications sur le code javascript donnée ne s'affichait pas sur le navigateur c'est pour sa que je l'ai supprimer et crée au nouveau code.
 
 Il n'y qu'une page javascript avec tout les fonctions.
 
 C'est un code d'animetion d'une journe passer du lever au coucher du soleil.
 
-##Mon canvas:
+Mon canvas:
 ```javascript
 
 var canvas = document.getElementById('myCanvas')
 var ctx = canvas.getContext('2d')
 var index = 0, count = 1, positionX = 300, positionY
 ```
-##Mon animation du soleil:
+Mon animation du soleil:
 ```javascript
 var animSun = function (tt) {
 	var mont1 = [{ x: -10, y: 190 }, { x: 100, y: 100 }, { x: 200, y: 150 }, { x: 300, y: 100 }, { x: 400, y: 190 }, { x: 500, y: 140}, { x: 560, y: 190 }]
 	var mont2 = [{ x: 300, y: 190 }, { x: 410, y: 100 }, { x: 500, y: 180 }, { x: 550, y: 80 }, { x: 610, y: 190 }]
 	var mont3 = [{ x: 70, y: 190 }, { x: 140, y: 110 }, { x: 200, y: 180 }, { x: 250, y: 120 }, { x: 320, y: 190 }]
-	_On voit ici les cordonnée des different montagne_
+	On voit ici les cordonnée des different montagne
 ```
 
-##Mon coucher et lever de soleil:
+Mon coucher et lever de soleil:
 
 ```javascript
 	var gradientFun = function (colorTop, colorBottom, topPosition) {
@@ -33,7 +33,7 @@ var animSun = function (tt) {
 	}
 ```
 
-##Ma fonction de dessin:
+Ma fonction de dessin:
 ```javascript
 	var dessinRec = function (x, y, w, h, ct, cb, pt) {
 		var gradient = gradientFun(ct, cb, pt)
@@ -42,7 +42,7 @@ var animSun = function (tt) {
 	}
 ```
 
-##Mes montagne:
+Mes montagne:
 ```javascript
 	var montagne = function (arr, decalage) {
 		var inRad = 20, outRad = 200
@@ -61,7 +61,7 @@ var animSun = function (tt) {
 	}
 ```
 
-##Mon soleil:
+Mon soleil:
 
 ```javascript
 	var sun = function () {
