@@ -12,14 +12,6 @@ var canvas = document.getElementById('myCanvas')
 var ctx = canvas.getContext('2d')
 var index = 0, count = 1, positionX = 300, positionY
 ```
-Mon animation du soleil:
-```javascript
-var animSun = function (tt) {
-	var mont1 = [{ x: -10, y: 190 }, { x: 100, y: 100 }, { x: 200, y: 150 }, { x: 300, y: 100 }, { x: 400, y: 190 }, { x: 500, y: 140}, { x: 560, y: 190 }]
-	var mont2 = [{ x: 300, y: 190 }, { x: 410, y: 100 }, { x: 500, y: 180 }, { x: 550, y: 80 }, { x: 610, y: 190 }]
-	var mont3 = [{ x: 70, y: 190 }, { x: 140, y: 110 }, { x: 200, y: 180 }, { x: 250, y: 120 }, { x: 320, y: 190 }]
-	On voit ici les cordonnée des different montagne
-```
 
 Mon coucher et lever de soleil:
 
@@ -76,7 +68,18 @@ Mon soleil:
 		ctx.arc(positionX, positionY, 40, 0, 2 * Math.PI);
 		ctx.fill()
 	}
+	```
 
+Mon animation du soleil:
+
+	```javascript
+	var animSun = function (tt) {
+		var mont1 = [{ x: -10, y: 190 }, { x: 100, y: 100 }, { x: 200, y: 150 }, { x: 300, y: 100 }, { x: 400, y: 190 }, { x: 500, y: 140}, { x: 560, y: 190 }]
+		var mont2 = [{ x: 300, y: 190 }, { x: 410, y: 100 }, { x: 500, y: 180 }, { x: 550, y: 80 }, { x: 610, y: 190 }]
+		var mont3 = [{ x: 70, y: 190 }, { x: 140, y: 110 }, { x: 200, y: 180 }, { x: 250, y: 120 }, { x: 320, y: 190 }]
+		On voit ici les cordonnée des different montagne
+
+	{...} 
 
 	dessinRec(0, 0, 600, 190, '#1DA1F2', '#79C4F2')-> ici ce son les different teinte du ciel
 	sun()
