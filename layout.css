@@ -1,0 +1,13 @@
+body{
+  margin: 0;
+}
+div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient( farthest-corner circle at left bottom, #328CFF, #33FFF3);
+}
+canvas{
+    background: cornsilk;
+}
